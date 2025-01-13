@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Oyonnax</title>
+    
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .slogan{
+            color: white;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding-right: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            font-style: italic;
+            text-shadow: 5px 5px 5px black;
+        }
+        
+        body {
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            
+            background-color: rgb(202, 190, 212);
+            color: #333;
+            
+                       
+            }
+            
+        .information {
+            display:flex;
+            gap:1rem;
+            padding:1rem;   
+            flex-wrap: wrap;
+        }
+        .texte {
+            padding:1rem;
+            border:solid 1px #ddd; 
+            flex-grow: 1;   
+            flex-basis: 300px;
+            text-align:left; font-size:20px; color: darkolivegreen;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+         .carte {
+            margin-left: 160px;
+            width: 600px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        h1 {
+            color:rgb(133, 228, 55);
+            background-color:rgb(72, 107, 148);
+            background-attachment: fixed;
+            margin: 20px 0px 20px 0px;
+            text-align: right;
+            text-decoration:transparent;
+            
+         }
+        
+            .container img {
+                
+                width: 600px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 30px;
+                box-shadow: 5px 5px 5px gray;
+                 
+            }
+            .container{
+                display: flex;
+                
+                justify-content: space-between;
+                gap: 50px;
+                border-radius: 30px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            
+            .button-container {
+                margin-top: 30px;
+                text-align: center;
+                display: flex;
+                text-align: right;        
+                gap: 10px;              
+
+            }
+            .link {
+                font-size: 24px;
+                text-align: center;
+                width: 100%;
+            }
+            h4 {text-shadow: 2px 2px  2px grey;
+                width: 100%;
+            }
+
+           
+            @media (max-width:768px) {
+        h1, h4, div, body, .texte, .entete, .container, .choisir, .custom_sellect,  .slogan, .link,  .button-container,.oyo:hover  {
+            flex-direction: column;
+            text-align: center;
+            font-size: 16px;
+            align-items: center;
+        }
+        .container img, .entete img,.carte {
+           
+            margin: 0;
+            width: 100%;
+            height: auto;
+        }
+        
+        }
+            @media (max-width:460px) {
+                h1, h4, div, body, .texte, .entete, .container, .choisir, .custom_sellect, .slogan, .link,  .button-container,.oyo:hover  {
+            flex-direction: column;
+            text-align: center;
+            font-size: 16px;
+            align-items: center;
+        }
+        .container img, .entete img, .carte {
+            
+            margin: 0;
+            width: 100%;
+            height: auto;
+        }      
+            }
+   
+        header,a {
+            margin-top: 20px;
+            
+            flex-direction: column;
+            text-align: left;
+            font-style: italic;
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+
+        }
+        header nav ul li a:hover{
+            font-size: 24px;
+            color: yellow;
+        }
+        .oyo:hover {
+        
+        font-size: 24px;
+        color: yellow;
+        }
+        footer {
+    padding: 2rem 0rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+   }    
+                      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" >
+            
+            </div>
+        <nav>
+            
+            <ul>
+                <li>MENU</li>
+                <li class="oyo"><a href="file:///C:/Users/Stagiaire/Desktop/test/html/projet_1/oyonnax.html">Oyonnax&nbsp;&nbsp; (Vous êtes sur cette page)</a></li>
+                <li><a href="file:///C:/Users/Stagiaire/Desktop/test/exe_html/projet_1/lieux.html">Ne partez pas sans voir ces lieux !</a></li>
+                <li><a href="file:///C:/Users/Stagiaire/Desktop/test/exe_html/projet_1/page_contact.html">Contactez-nous!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="button-container">
+        <span class="choisir"><b>Ce dont vous avez besoin :</b></span>
+        <select id="mySelect" class="custom-select">
+        <option value="option1"> Restaurants</a></option>
+        <option value="option2">Cafes</option>
+        <option value="option3">Hotels</option>
+    </select>
+    </div>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;"> OYONNAX  </h1>
+    <div class="slogan"><b>Oyonnax oeuvre pour le bien être...</b></div>
+   
+      <div class="information">  
+        <div class="texte">
+            
+                <h2> "Oyonnax, <b>deuxième</b> ville de l’Ain, prend place <q>au coeur du Haut-Bugey.</q><br>
+                    Le massif montagneux influence la morphologie de la commune, avec un territoire étendu."  </h2><br>
+  
+                <p>
+                    <b>L’histoire:<br><br></b>Au Moyen Age, Oyonnax était une simple dépendance de la seigneurie de Thoire, dont les maîtres bâtirent de nombreuses places fortes autour de la ville.
+                    Ces seigneurs étaient puissants et leurs querelles avec les comtes de Savoie, éternels rivaux, innombrables. La Croix de guerre et la médaille de la Résistance ont été décernées à la Ville d’Oyonnax après la seconde guerre mondiale pour ses faits de résistance, notamment celui du 11 NOVEMBRE 1943 :
+                    Le gouvernement collaborationniste du maréchal PÉTAIN avait interdit toute commémoration du 25ème anniversaire de la victoire de 1918 sur l’Allemagne.
+                    <br><br><br>
+                    <b>Le climat:</b><br><br> À Oyonnax, les étés sont confortable, les hivers sont très froid et neige et le climat est partiellement nuageux tout au long de l'année. 
+                    Au cours de l'année, la température varie généralement de -3 °C à 24 °C et est rarement inférieure à -8 °C ou supérieure à 29 °C. Les conditions climatiques de Oyonnax sont caractérisées par une atmosphère chaude et tempérée. Les niveaux de précipitations dans Oyonnax sont remarquables, car il y a des précipitations même pendant le mois le plus aride. Selon la classification de Köppen-Geiger, le climat qui prévaut dans cette région est classé comme Cfb. En moyenne la température à Oyonnax est de 9.2 °C. Chaque année, les précipitations sont en moyenne de 1676 mm
+                    La zone spécifiée est située dans l'hémisphère nord de notre planète. Le début de l'été commence vers la fin du Juin et se termine vers le Septembre. La saison est caractérisée par une séquence de mois, à savoir : Juin, Juillet, Aout, Septembre.
+                </p>
+            </div>            
+            <div class="texte">            
+                    <h2>Emplacement:</h2>
+                    </b> Au carrefour des régions Rhône-Alpes, Bourgogne et Franche-Comté, 
+                    elle est encadrée par les agglomérations de Lyon et de Genève, 
+                    chacune à <em>moins d’une heure</em> d’autoroute.La gare TGV de Nurieux permet de rejoindre Paris en 2h20.
+                    À la frontière du Jura, Oyonnax est entourée de plusieurs communes 
+                    qui constituent la Communauté d’Agglomération du Haut-Bugey. Oyonnax, ville de moyenne montagne, positionnée dans une vallée au cœur de la chaîne jurassienne,
+                    se situe au nord du département de l'Ain, à la limite nord du Haut-Bugey, dans une région de lacs, 
+                    de forêts et de rivières entre les agglomérations de Lyon et Genève.</p>
+                    <br>
+                    
+                <img class="carte" src="pictures/cart_oyo.jpg" alt="4">
+        </div>
+    </div>
+    
+
+        
+    <div class="container">
+        <img src="pictures/oyonnax.jpg" alt="1">
+        <img src="pictures/oyo.jpg" alt="2">
+        <img src="pictures/oyo1.jpg" alt="3">
+                
+    </div>
+        
+     <div class="link">   
+        <h4> Vous pouvez visiter le site officiel d'Oyonnax en appuyant sur le bouton ci-dessous.</h4> 
+
+        <a href="https://www.oyonnax.fr" target="_blank">Le site officiel d'Oyonnax </a>
+    </div>
+    <footer>
+        <p>© 2024 Monsieur BLO x Blo Websoft</p>
+      </footer>
+
+    
